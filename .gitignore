@@ -1,0 +1,33 @@
+# Terraform files
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+!example.tfvars
+
+# Terragrunt cache
+.terragrunt-cache/
+
+# Local state
+.terraform-state/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Secrets and sensitive data
+secrets/
+*.pem
+*.key
+
+# Logs
+*.log
