@@ -13,7 +13,7 @@ variable "queue_name" {
 }
 
 output "address" {
-    value = random_pet.address.id + "-" + var.region
+    value = "${random_pet.address.id}-${var.region}"
 }
 
 output "config" {

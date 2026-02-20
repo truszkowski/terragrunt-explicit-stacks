@@ -5,5 +5,5 @@ variable "region" {
 }
 
 output "bucket_name" {
-    value = random_pet.bucket_name.id + "-" + var.region
+    value = "${random_pet.bucket_name.id}-${var.region}"
 }
