@@ -15,3 +15,7 @@ variable "queue_name" {
 output "address" {
     value = random_pet.address.id + "-" + var.region
 }
+
+output "config" {
+    value = "Bucket: ${var.bucket_name}, Queue: ${var.queue_name}"
+}
