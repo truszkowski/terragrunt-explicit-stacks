@@ -13,5 +13,5 @@ variable "queue_name" {
 }
 
 output "address" {
-    value = random_pet.address.id
+    value = random_pet.address.id + "-" + var.region
 }

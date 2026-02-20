@@ -5,5 +5,5 @@ variable "region" {
 }
 
 output "queue_name" {
-    value = random_pet.queue_name.id
+    value = random_pet.queue_name.id + "-" + var.region
 }
